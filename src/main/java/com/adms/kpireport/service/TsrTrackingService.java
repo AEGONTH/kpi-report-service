@@ -22,4 +22,6 @@ public interface TsrTrackingService {
 
 	public List<TsrTracking> findByCriteria(DetachedCriteria detachedCriteria) throws Exception;
 
+	public int bulkUpdate(String query, Object...values) throws Exception;
+
 }

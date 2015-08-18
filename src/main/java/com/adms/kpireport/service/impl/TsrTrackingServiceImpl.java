@@ -61,4 +61,9 @@ public class TsrTrackingServiceImpl implements TsrTrackingService {
 		return tsrTrackingDao.findByCriteria(detachedCriteria);
 	}
 	
+	@Override
+	public int bulkUpdate(String query, Object...values) throws Exception {
+		return tsrTrackingDao.bulkUpdate(query, values);
+	}
+	
 }
