@@ -24,4 +24,6 @@ public interface TsrHierarchyService {
 
 	public List<TsrHierarchy> findByCriteria(DetachedCriteria detachedCriteria) throws Exception;
 
+	public int delete(String hql, Object...params) throws Exception;
+
 }

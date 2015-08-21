@@ -66,4 +66,9 @@ public class TsrHierarchyServiceImpl implements TsrHierarchyService {
 		tsrHierarchyDao.delete(example.getId());
 	}
 	
+	@Override
+	public int delete(String hql, Object...params) throws Exception {
+		return tsrHierarchyDao.bulkUpdate(hql, params);
+	}
+	
 }
